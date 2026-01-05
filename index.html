@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Probeats</title>
+    <link rel="stylesheet" href="./style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header> 
         <nav> 
-            <div> 
-                <img src="assets/img/logo/probeats-logo.png" alt="Logo de la marque Probeats" >
-                    <p> Casques </p>
-                    <p> Enceintes </p>
-                    <p> À propos </p>
-                    <p>  Assistance </p>
+                <div class="flex-container">
+                    <img id="Logo" src="assets/img/logo/probeats-logo.png" alt="Logo de la marque Probeats" >
+                    <p class="menu-item special-color"> Casques </p>
+                    <p class="menu-item special-color "> Enceintes </p>
+                    <p class="menu-item special-color"> À propos </p>
+                    <p class="menu-item special-color">  Assistance </p>
                 </div>
-                <div> 
-                    <form action="/recherche" method="get" class="search-bar">
-                        <input class="search" type="text" placeholder="Rechercher...">
-                        <button type="submit">
-                            <img src="assets/img/icon/search.png" alt="Loupe">
+                <div class="flex-container"> 
+                    <form class="menu-item" action="/recherche" method="get" class="search-bar">
+                        <input  class="search" type="text" placeholder="Rechercher...">
+                        <button class="search-button" type="submit">
+                            <img  src="assets/img/icon/search.png" alt="Loupe">
                         </button>
                     </form>
                     <img  class="icon" src="assets/img/icon/achat.png" alt="Panier d'achat" >
@@ -30,34 +35,34 @@
          </nav>
     </header>
     <main>
-<!-- Annonce du produit phare-->
+        <!-- Annonce du produit phare-->
         <div> 
             <h1> Notre nouveau casque : Beatify </h1> 
-            <button> 149,99€ - Acheter </button>
-            <img src="assets/img/illustrations/img-1.png" alt="Une femme souriante avec le casque" >
+            <button class="button-1"> 149,99€ - Acheter </button>
+            <img class="principal" src="assets/img/illustrations/img-1.png" alt="Une femme souriante avec le casque" >
         </div>
-        <div>
-                <img src="assets/img/products/casque.png" alt="Casque blanc">
-                <h2> Une nouvelle technologie qui saura vous séduire </h2>
+        <div class="zoom-product">
+                <img class="principal-product" src="assets/img/products/casque.png" alt="Casque blanc">
+                <h2 class="text-product"> Une nouvelle technologie qui saura vous séduire </h2>
         </div>
         <!-- Mise en avant des autres produits -->
         <div>
             <h3> Nos produits </h3>
-            <div> 
-                <div>
-                    <img src="assets/img/products/enceinte_portable.png" alt="Enceinte portable blanche et noire">
-                    <div>
-                        <p> Mono - Enceinte Bluetooth </p>
-                        <p> 39,90€</p>
-                        <button> Acheter </button>
+            <div class="grid-container"> 
+                <div class="grid-item">
+                    <img  class="product" src="assets/img/products/enceinte_portable.png" alt="Enceinte portable blanche et noire">
+                    <div class="grid-product">
+                        <p class="description"> Mono - Enceinte Bluetooth </p>
+                        <p class="description"> 39,90€</p>
+                        <button class="button-2"> Acheter </button>
                     </div>
                 </div>
-                <div> 
-                    <img src="assets/img/products/enceinte_salon.png" alt="Enceinte de salon en bois">
-                    <div> 
-                        <p> BassUp - Enceinte Studio </p>
-                        <p> 99,90€</p>
-                        <button> Acheter </button>
+                <div class="grid-item"> 
+                    <img class="product" src="assets/img/products/enceinte_salon.png" alt="Enceinte de salon en bois">
+                    <div class="grid-product"> 
+                        <p class="description"> BassUp - Enceinte Studio </p>
+                        <p class="description"> 99,90€</p>
+                        <button class="button-2"> Acheter </button>
                     </div>
                 </div>
             </div>
@@ -67,22 +72,23 @@
             <h3> Les avis de nos clients </h3>
          </div>
     </main>
+    <!-- Le bas du page -->
     <footer>
-        <div>
-            <img src="assets/img/logo/logo.png" alt="Logo de la marque Probeats" >
-            <div> 
-                <a> Site Web </a>
-                <a> Accueil </a>
-                <a> Beatify </a>
-                <a> Votre commande </a>
-                <a> Assistance </a>
+        <div class="footer">
+            <img id="Logo" src="assets/img/logo/logo.png" alt="Logo de la marque Probeats" >
+            <div class="footer-item-container"> 
+                <a class="flex-item categories"> Site Web </a>
+                <a class="flex-item"> Accueil </a>
+                <a class="flex-item"> Beatify </a>
+                <a class="flex-item"> Votre commande </a>
+                <a class="flex-item"> Assistance </a>
             </div>
-            <a > À propos </a>
-            <a > Mentions légales </a>
-            <a > Contactez-nous </a>
-            <div>
-                <p> Réseaux Sociaux </p>
-                <div>
+            <a class="categories"> À propos </a>
+            <a class="categories"> Mentions légales </a>
+            <a class="categories"> Contactez-nous </a>
+            <div class="social">
+                <p class="categories"> Réseaux Sociaux </p>
+                <div class="social-icons">
                     <img src="assets/img/icon/facebook.png" alt="Facebook">
                     <img src="assets/img/icon/twitter.png" alt="Réseau social X">
                     <img src="assets/img/icon/instagram.png" alt="Instagram">
